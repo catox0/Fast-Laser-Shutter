@@ -1,5 +1,5 @@
 # Fast-Laser-Shutter
-Arduino-controlled laser-shutter (USB and push-button control)
+Arduino-controlled laser-shutter (USB and push-button control) with controlled acceleration and breaking.
 
 The magentic coil of a hard-drive is perfectly suited to create a fast laser shutter with down to single-ms opening/closing time. [cf: L. P. Maguire, S. Szilagyi, and R. E. Scholten, Review of Scientific Instruments 75:9, 3077 (2004).] Here is a program to control such a shutter with an Arduino and a LN298 or TB6612FNG module (around 1$ at Aliexpress). 
 
