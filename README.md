@@ -1,7 +1,7 @@
 # Fast-Laser-Shutter
 Arduino-controlled laser-shutter (USB and push-button control) with controlled acceleration and breaking.
 
-The magentic coil of a hard-drive is perfectly suited to create a fast laser shutter with down to single-ms opening/closing time. [cf: L. P. Maguire, S. Szilagyi, and R. E. Scholten, Review of Scientific Instruments 75:9, 3077 (2004).] Here is a program to control such a shutter with an Arduino and a LN298 or TB6612FNG module (around 1$ at Aliexpress). 
+The magentic coil of a hard-drive is perfectly suited to create a fast laser shutter with down to single-ms opening/closing time. [cf: L. P. Maguire, S. Szilagyi, and R. E. Scholten, Review of Scientific Instruments 75:9, 3077 (2004).] We use such shutters in the lab for more than a decade. Here is a program to control such a shutter with an Arduino and a LN298 or TB6612FNG module (around 1$ at Aliexpress). 
 
 For fast opening/closing times, use the biggest power supply available (the L298 is rated up to 46V, 2A, 3A peak). The shutters can make a lot of noise, hence this program will decellerate the shutter for a soft landing at the stop position. The Program also reduces the holding current to avoid overheating. When the shutter settings are optimized, the shutter will open / close with maximal speed, minimal noise, and minimal power consumption. The shutter will accelerate for an adjustable time (variable names accelOpen, accelClose), then break for an adjustable time (variable names breakOpen, breakClose), and then hold the final position with reduced power (variable names openPower, closePower, value range 0-255). Each shutter / power supply combination must be optimized separately. Below is a guideline to finding the correct values.
 
