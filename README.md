@@ -19,14 +19,6 @@ For the following, I assume that the 'open' shutter position requires a holding 
 
 ##Example: hard-drive shutter with 12V, 2.5A power supply, L298N driver.
 
-High-power settings (largest motion)\
-_accelClose = 9000\
-_breakClose = 5500\
-_closePower = 15\
-_accelOpen  = 9200\
-_breakOpen = 5300\
-_openPower = 60\
-
 Low-power settings\
 _accelClose = 8100\
 _breakClose = 5900\
